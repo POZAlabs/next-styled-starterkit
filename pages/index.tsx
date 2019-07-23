@@ -54,9 +54,6 @@ const IndexPage: React.FC = () => {
         <li>Axios</li>
       </ul>
       <h3>ETC</h3>
-      <ul>
-        <li>Dotenv-Webpack</li>
-      </ul>
       <hr />
     </React.Fragment>
   )

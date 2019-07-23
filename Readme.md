@@ -30,9 +30,6 @@
 
 - Network
   - axios
-
-- Env
-  - dotenv-webpack
 ---
 
 # Scripts
