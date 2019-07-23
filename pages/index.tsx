@@ -14,7 +14,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <React.Fragment>
-      <Title>Boilerplate</Title>
+      <Title data-testid='index-title'>Boilerplate</Title>
       <h2> Test </h2>
       <ul>
         <ReduxButton onClick={handleClick}>
