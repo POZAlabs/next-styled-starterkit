@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import styled from 'styled-components';
 import { AppStore } from '../store/type';
@@ -8,18 +8,18 @@ const IndexPage: React.FC = () => {
   const { forTest } = useSelector((state: AppStore) => state.example)
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    setTimeout(() => {
-      dispatch(testingStore());
-    }, 1000)
-  })
+  const handleClick = () => {
+    dispatch(testingStore());
+  }
 
   return (
     <React.Fragment>
       <Title>Boilerplate</Title>
       <h2> Test </h2>
       <ul>
-        <li>React-Redux: <b>{forTest.toString()}</b></li>
+        <ReduxButton onClick={handleClick}>
+          React-Redux: <b>{forTest.toString()}</b>
+        </ReduxButton>
         <li>.env: </li>
       </ul>
       <hr />
@@ -59,7 +59,11 @@ const IndexPage: React.FC = () => {
 
 const Title = styled.h1`
   color: indianred
-`
+`;
 
+const ReduxButton = styled.li`
+  cursor: pointer;
+  user-select: none;
+`;
 
 export default IndexPage;

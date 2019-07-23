@@ -9,7 +9,7 @@ export const initialState: ExampleStore = {
 export const reducer = (state = initialState, action: testingStoreType): ExampleStore => {
   switch (action.type) {
     case TESTING_STORE: {
-      return { ...state, forTest: true }
+      return { ...state, forTest: !state.forTest }
     }
 
     default: {
