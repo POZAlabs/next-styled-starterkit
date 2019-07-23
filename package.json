@@ -14,7 +14,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.0.0",
@@ -25,8 +26,10 @@
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "@types/react-redux": "^7.1.1",
+    "@types/styled-components": "^4.1.18",
     "babel-core": "^6.26.3",
     "babel-jest": "^24.8.0",
+    "babel-plugin-styled-components": "^1.10.6",
     "jest": "^24.8.0",
     "typescript": "^3.5.3"
   }
