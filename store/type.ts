@@ -1,5 +1,5 @@
 import { ExampleStore } from './example';
 
-export interface appStore {
+export interface AppStore {
   example: ExampleStore
 }

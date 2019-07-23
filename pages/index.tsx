@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import styled from 'styled-components';
+import { AppStore } from '../store/type';
+import { testingStore } from '../store/example';
 
 const IndexPage: React.FC = () => {
+  const { forTest } = useSelector((state: AppStore) => state.example)
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(testingStore());
+    }, 1000)
+  })
+
   return (
     <React.Fragment>
-      <h1>Boilerplate</h1>
-      <h2>Stack</h2>
+      <Title>Boilerplate</Title>
+      <h2> Test </h2>
+      <ul>
+        <li>React-Redux: <b>{forTest.toString()}</b></li>
+        <li>.env: </li>
+      </ul>
       <hr />
+      <h2>Stack</h2>
       <h3>CORE</h3>
       <ul>
         <li>React</li>
@@ -34,9 +52,14 @@ const IndexPage: React.FC = () => {
       <ul>
         <li>Dotenv-Webpack</li>
       </ul>
+      <hr />
     </React.Fragment>
   )
 }
+
+const Title = styled.h1`
+  color: indianred
+`
 
 
 export default IndexPage;
