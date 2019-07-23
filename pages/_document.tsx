@@ -21,12 +21,12 @@ export default class MyDocument extends Document {
 
       return {
         ...initialProps,
-        styles: [
+        styles: (
           <React.Fragment>
             {initialProps.styles}
             {sheet.getStyleElement()}
           </React.Fragment>
-        ]
+        )
       }
     } finally {
       sheet.seal()

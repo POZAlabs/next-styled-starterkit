@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "test": "jest --watchAll",
+    "test:once": "jest"
   },
   "dependencies": {
     "dotenv-webpack": "^1.7.0",
