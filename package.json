@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start:dev": "next start",
     "type-check": "tsc",
     "test": "jest --watchAll",
     "test:once": "jest"

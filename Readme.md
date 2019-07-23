@@ -26,19 +26,19 @@
 - Test
   - jest
   - @testing-library/react
-  - jest-dom
+  - @testing-library/jest-dom
 
 - Network
   - axios
 ---
 
 # Scripts
-> 💡 yarn을 이용해서 구현한 보일러플레이트이기 때문에 yarn을 기준으로 작성했습니다.
+> 💡 yarn을 이용해서 구현한 보일러플레이트이기에 yarn을 기준으로 작성했습니다.
 
 - `yarn install`: 보일러플레이트를 사용하기 위한 라이브러리 설치
 - `yarn run dev` : localhost환경에서 실행
 - `yarn run build` : 배포를 위한 빌드
-<!-- - `yarn run start:staging`: staging서버를 통한 배포 -->
+- `yarn run start:dev`: dev 환경에서 빌드된 서비스 실행
 - `yarn run test` : jest를 통한 실시간 테스트
 - `yarn run test:once` : jest를 통한 테스트 ☞ 전체 파일에 대한 테스트를 한번 진행합니다.
 - `yarn run type-check`: typescript cli를 통한 `.ts`, `.tsx` 파일 컴파일 및 타입 체크
