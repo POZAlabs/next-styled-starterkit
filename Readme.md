@@ -10,9 +10,9 @@
   - next.js
   - typescript
 
-- State
+- State Management
   - redux
-  - redux-thunk
+  - react-redux
 
 - CSS
   - styled-components
@@ -37,5 +37,4 @@
 - `yarn run build` : 배포를 위한 빌드
 - `yarn run test` : jest를 통한 유닛 테스트
 <!-- - `yarn run deploy:staging`: staging서버를 통한 배포 -->
-
 --- 
