@@ -11,7 +11,7 @@ const IndexPage: React.FC = () => {
   const handleClick = () => {
     dispatch(testingStore());
   }
-  console.log(process.env.CAN_USE_ENV);
+
   return (
     <React.Fragment>
       <Title>Boilerplate</Title>
@@ -21,10 +21,10 @@ const IndexPage: React.FC = () => {
           React-Redux: <b>{forTest.toString().toUpperCase()}</b> <i>← click me</i>
         </ReduxButton>
         <li>
-          Can use .env: <b>{process.env.CAN_USE_ENV || 'FALSE'}</b>
+          Can use configuration value: <b>{process.env.CAN_USE_ENV || 'FALSE'}</b>
         </li>
         <li>
-          Enviroment: Is {process.env.ENVIRONMENT || 'unknown'} Enviroment
+          Enviroment: <b>{process.env.ENVIRONMENT || 'unknown'} </b>
         </li>
       </ul>
       <hr />
