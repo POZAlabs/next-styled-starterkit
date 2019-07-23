@@ -1,3 +1,8 @@
+/*
+  Styled-Component를 SSR 환경에서 사용하기 위한 컴포넌트 입니다.
+  지우거나 수정하면 CSS가 동작하지 않을 수 있습니다.
+*/
+
 import React from 'react';
 import Document, { DocumentContext } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
